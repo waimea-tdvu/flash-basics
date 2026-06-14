@@ -9,8 +9,11 @@
 <ul>
 
 {% for cat in cats %}
-<li>{{ cat }}</li>
+
+<li>{{ cat.name }} with id {{ cat.id}}</li>
+
 {% endfor %}
+
 </ul>
 
  {% endblock %}
