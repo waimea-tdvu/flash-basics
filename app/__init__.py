@@ -69,7 +69,7 @@ def show_message_with_cats():
 # Specific cats
 #-----------------------------------------------------------
 @app.get("/cat/<int:id>")
-def show_a_cat():
+def show_a_cat(id):
     cat = get_cat(id)
 
     if cat:
